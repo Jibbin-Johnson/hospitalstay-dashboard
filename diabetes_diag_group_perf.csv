@@ -1,0 +1,13 @@
+diag_1_group,n,diag_median_los,actual_extended_rate,predicted_extended_rate,avg_pred_prob
+Genitourinary,5117,3.0,0.498,0.859,0.53
+External/Other,1645,7.0,0.498,0.864,0.514
+Circulatory,30437,3.0,0.496,0.869,0.53
+Respiratory,14423,3.0,0.494,0.868,0.525
+Diabetes,8757,3.0,0.491,0.847,0.524
+Musculoskeletal,4957,3.0,0.467,0.837,0.5
+Skin,2614,4.0,0.443,0.827,0.474
+Injury,6974,4.0,0.418,0.782,0.442
+Neoplasms,3433,5.0,0.415,0.758,0.441
+Other/Unknown,10805,4.0,0.406,0.743,0.434
+Symptoms,3129,3.0,0.386,0.739,0.408
+Digestive,9475,4.0,0.377,0.755,0.411
