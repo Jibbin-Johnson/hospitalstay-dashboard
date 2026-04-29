@@ -809,7 +809,7 @@ with tab3:
     avg_los_all = dashboard["time_in_hospital"].median()   # median for patient throughput calc
 
     st.markdown("---")
-    section_hdr("Adjustable Assumptions — All KPIs and Charts Update Automatically")
+    section_hdr("Adjustable Assumptions")
 
     a1, a2, a3 = st.columns(3)
     with a1: cost_bed = float(st.number_input("Cost per Bed-Day ($)",              value=2500, step=100, min_value=100, key="bi_cost"))
@@ -1019,6 +1019,7 @@ with tab4:
         display_df = (sf2[show_cols]
                       .sort_values("Probability_Score", ascending=False)
                       .reset_index(drop=True))
+        display_df["encounter_id"] = display_df["encounter_id"].astype(str)
 
         for col in display_df.select_dtypes(include=[np.number]).columns:
             display_df[col] = display_df[col].round(2)
